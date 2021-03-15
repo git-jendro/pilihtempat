@@ -135,12 +135,24 @@ return [
         // ],
         'name' => [
             'required' => 'Kolom Nama harus diisi !',
+            'regex' => 'Nama hanya boleh huruf dan spasi !',
+            'min' => 'Nama minimal 6 laralter !',
         ],
         'email' => [
             'required' => 'Kolom Email harus diisi !',
+            'email' => 'Format penulisan email salah !',
+            'unique' => 'Email telah digunakan !',
         ],
         'password' => [
             'required' => 'Kolom Password harus diisi !',
+            'alpha_num' => 'Password hanya boleh huruf dan angka !',
+            'min' => 'Password minimal 6 karakter !',
+            'confirmed' => 'Konfirmasi Password salah !',
+        ],
+        'password_confirmation' => [
+            'required_with' => 'Kolom Konfirmasi Password harus diisi !',
+            'min' => 'Konfirmasi Password minimal 6 karakter !',
+            'same' => 'Konfirmasi Konfirmasi Password salah !',
         ],
     ],
 
