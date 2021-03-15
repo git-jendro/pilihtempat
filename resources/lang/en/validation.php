@@ -130,8 +130,17 @@ return [
     */
 
     'custom' => [
-        'attribute-name' => [
-            'rule-name' => 'custom-message',
+        // 'attribute-name' => [
+        //     'rule-name' => 'custom-message',
+        // ],
+        'name' => [
+            'required' => 'Kolom Nama harus diisi !',
+        ],
+        'email' => [
+            'required' => 'Kolom Email harus diisi !',
+        ],
+        'password' => [
+            'required' => 'Kolom Password harus diisi !',
         ],
     ],
 
