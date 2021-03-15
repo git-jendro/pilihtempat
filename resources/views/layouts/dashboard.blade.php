@@ -98,16 +98,24 @@
                         <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
                         <li class="nav-item py-2">
-                            <a href="/dashboard/user" class="nav-link">
-                                <i class="nav-icon fas fa-user-alt"></i>
+                            <a href="{{route('user')}}" class="nav-link">
+                                <i class="nav-icon fas fa-user"></i>
+                                <p>
+                                    User
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item py-2">
+                            <a href="{{route('coworker')}}" class="nav-link">
+                                <i class="nav-icon fas fa-users"></i>
                                 <p>
                                     Coworker
                                 </p>
                             </a>
                         </li>
                         <li class="nav-item py-2">
-                            <a href="/dashboard/dev" class="nav-link">
-                                <i class="nav-icon fas fa-project-diagram"></i>
+                            <a href="{{route('venue')}}" class="nav-link">
+                                <i class="nav-icon fas fa-building"></i>
                                 <p>
                                     Venue
                                 </p>
@@ -138,7 +146,7 @@
                             </a>
                         </li> --}}
                         <li class="nav-item py-2">
-                            <a href="/dashboard/facility" class="nav-link">
+                            <a href="{{route('facility')}}" class="nav-link">
                                 <i class="nav-icon fas fa-plus-square"></i>
                                 <p>
                                     Facility
@@ -146,7 +154,7 @@
                             </a>
                         </li>
                         <li class="nav-item py-2">
-                            <a href="/dashboard/facility" class="nav-link">
+                            <a href="{{route('procedure')}}" class="nav-link">
                                 <i class="nav-icon fab fa-product-hunt"></i>
                                 <p>
                                     Procedure
@@ -162,7 +170,7 @@
                             </a>
                         </li> --}}
                         <li class="nav-item py-2">
-                            <a href="/dashboard/adv" class="nav-link">
+                            <a href="{{route('master')}}" class="nav-link">
                                 <i class="nav-icon fa fa-asterisk"></i>
                                 <p>
                                     Master
